@@ -54,7 +54,7 @@
             <% if (post.toc) { %>
                 <div id="toc" class="toc-article">
                 <strong class="toc-title"><%= __('article.catalogue') %></strong>
-                    <%- toc(post.content,{list_number: false}) %>
+                    <%- toc(post.content) %>
                 </div>
             <% } %>
         <% } %>
@@ -68,18 +68,6 @@
             </div>
         <% } %>
         <footer class="article-footer">
-        <table style="width:100%">
-            <tr>
-                <td >
-                    <%- partial('share/index') %>
-                </td>
-                <td align="right">
-                    <%- partial('post/tag') %>
-                </td>
-            </tr>
-        </table>
-        
-        
         </footer>
     </div>
 </article>
